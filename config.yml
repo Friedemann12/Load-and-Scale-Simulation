@@ -1,0 +1,15 @@
+numberOfInstances: 1
+numberOfClients: 100
+portLoadbalancer: 7777
+path: /calc
+imageName: calc_pi
+dockerPort: 5000
+loadbalancingAlgorithm: AWRR
+scalingMechanism: yes
+filePath: Messungen/Versuch5_2/
+lowerUtilizationLimit: 0.15
+upperUtilizationLimit: 0.30
+maxContainer: 20
+timeBetweenClientsMSMax: 500
+timeBetweenClientsMSMin: 100
+
